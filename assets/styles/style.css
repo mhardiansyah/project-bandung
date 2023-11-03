@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&family=Quicksand:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+
+header{
+    display: inline;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2,h3 {
+    color: seagreen;
+}
+
+footer {
+    padding:  20px;
+    color: white;
+    background: seagreen;
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+}
+
+.fetured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+.profile header {
+    text-align: center;
+}
+
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* margin-top: 20px; */
+}
+
+.jumbotron {
+    font-size: 20px;
+    background-color: blue;
+    text-align: center;
+    padding: 27px;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+    /* display: inline;
+    margin-right: 20px;
+     */
+}
+
+nav {
+    background: slateblue;
+    padding-block: 5px;
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content{
+    /* float: left;
+    width: 75%; */
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+aside {
+    /* float: right;
+    width: 25%;
+    padding-left: 20px; */
+    flex: 1;
+}
+
+@media screen and (max-width: 1200Px) {
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside{
+        align-self: center;
+    }
+} 
+
+@media screen and (max-width:768px){
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
